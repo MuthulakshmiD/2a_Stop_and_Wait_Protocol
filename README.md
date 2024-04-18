@@ -26,12 +26,12 @@ while True:
    c.close()
    break
 ##  server:
-import socket\n
-s=socket.socket()\n
-s.connect(('localhost',8000))\n
-while True:\n
- print(s.recv(1024).decode())\n
- s.send("Acknowledgement Recived".encode())\n
+import socket
+s=socket.socket()
+s.connect(('localhost',8000))
+while True:
+ print(s.recv(1024).decode())
+ s.send("Acknowledgement Recived".encode())
 ## OUTPUT
 ![image](https://github.com/MuthulakshmiD/2a_Stop_and_Wait_Protocol/assets/144870775/5b27486c-3fdf-4717-93e1-99d0140790ff)
 
